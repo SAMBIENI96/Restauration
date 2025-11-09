@@ -1,0 +1,597 @@
+
+
+
+
+/* Hero */
+.heroReser {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(40, 12, 16, 0.6), rgba(40, 12, 16, 0.8)),
+              url(/assets/image/reservation/reservationhero.png) center/cover;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  animation: fadeInUp 1s ease;
+}
+
+.heroReser h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.heroReser p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  opacity: 0.95;
+  line-height: 1.7;
+}
+
+/* Reservation Section */
+.reservation-section {
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.reservation-card {
+  max-width: 1200px;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  padding: 3rem;
+  border: 1px solid var(--border);
+}
+
+.reservation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  font-family: 'Playfair Display', serif;
+}
+
+/* Calendar */
+.calendar {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  background: var(--bg-light);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.calendar-header button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.calendar-header button:hover {
+  background: rgba(198, 151, 73, 0.1);
+}
+
+.calendar-month {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+}
+
+.calendar-day-name {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.75rem 0;
+  color: var(--text-light);
+  opacity: 0.7;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  border: none;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.calendar-day:hover:not(:disabled) {
+  background: rgba(198, 151, 73, 0.2);
+  transform: scale(1.05);
+}
+
+.calendar-day:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.calendar-day.selected {
+  background: var(--secondary);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(198, 151, 73, 0.4);
+}
+
+/* Time Slots */
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.time-slot {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--border);
+  background: var(--bg-light);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.time-slot:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.time-slot.selected {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(198, 151, 73, 0.3);
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+.form-control {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: var(--bg-light);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(198, 151, 73, 0.1);
+}
+
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23C69749' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.5em;
+  padding-right: 3rem;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Section */
+.submit-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, var(--secondary) 0%, #d4a960 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(198, 151, 73, 0.3);
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+.btn-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(198, 151, 73, 0.4);
+}
+
+.contact-info {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(198, 151, 73, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(198, 151, 73, 0.2);
+}
+
+.contact-info p {
+  color: var(--text-light);
+  opacity: 0.8;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--secondary);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .reservation-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .desktop-nav {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav > .btn-reserve {
+    display: none;
+  }
+  
+  header {
+    padding: 1rem;
+  }
+  
+  .reservation-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .reservation-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Hero Mobile */
+  .heroReser {
+    height: 60vh;
+    padding: 1.5rem 1rem;
+  }
+  
+  .heroReser h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .heroReser p {
+    font-size: 0.95rem;
+  }
+  
+  /* Reservation Card Mobile */
+  .reservation-section {
+    padding: 2rem 1rem;
+  }
+  
+  .reservation-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+  
+  .reservation-grid {
+    gap: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+ 
+  /* Calendar Mobile */
+  .calendar {
+    padding: 0.75rem;
+  }
+  
+  .calendar-header {
+    margin-bottom: 0.75rem;
+  }
+  
+  .calendar-header button {
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+  }
+  
+  .calendar-month {
+    font-size: 1rem;
+  }
+  
+  .calendar-grid {
+    gap: 0.15rem;
+  }
+  
+  .calendar-day-name {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+  
+  .calendar-day {
+    font-size: 0.8rem;
+    min-height: 36px;
+  }
+  
+  /* Time Slots Mobile */
+  .time-slots {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .time-slot {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    flex: 1 1 calc(33.333% - 0.5rem);
+    min-width: 90px;
+    text-align: center;
+  }
+  
+  /* Form Mobile */
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-group label {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .form-control {
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+  
+  select.form-control {
+    background-position: right 0.5rem center;
+    background-size: 1.2em;
+  }
+  
+  textarea.form-control {
+    min-height: 100px;
+  }
+  
+  /* Submit Section Mobile */
+  .submit-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    gap: 1.25rem;
+  }
+  
+  .btn-submit {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  
+  .contact-info {
+    padding: 1.25rem 1rem;
+  }
+  
+  .contact-info p {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .contact-info a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Très petit mobile */
+
+  .heroReser {
+    min-height: 300px;
+  }
+  
+  .heroReser h1 {
+    font-size: 1.75rem;
+  }
+  
+  .heroReser p {
+    font-size: 0.9rem;
+  }
+  
+  .reservation-card {
+    padding: 1.25rem;
+  }
+  
+  .section-title {
+    font-size: 0.95rem;
+  }
+  
+  .calendar {
+    padding: 0.5rem;
+  }
+  
+  .calendar-header button {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+  
+  .calendar-month {
+    font-size: 0.9rem;
+  }
+  
+  .calendar-day {
+    font-size: 0.75rem;
+    min-height: 32px;
+  }
+  
+  .calendar-day-name {
+    font-size: 0.65rem;
+    padding: 0.4rem 0;
+  }
+  
+  .time-slot {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 80px;
+    font-size: 0.8rem;
+    padding: 0.55rem 0.75rem;
+  }
+  
+  .form-control {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn-submit {
+    padding: 0.9rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  
+  .contact-info {
+    padding: 1rem 0.85rem;
+  }
+  
+  .contact-info p {
+    font-size: 0.8rem;
+  }
+  
+  .contact-info a {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablette Paysage */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reservation-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .calendar-grid {
+    gap: 0.3rem;
+  }
+  
+  .calendar-day {
+    font-size: 1rem;
+  }
+  
+  .time-slots {
+    justify-content: flex-start;
+  }
+  
+  .time-slot {
+    flex: 0 0 auto;
+  }
+}
+
+/* Orientation Paysage Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .heroReser {
+    min-height: 250px;
+  }
+  
+  .heroReser h1 {
+    font-size: 1.5rem;
+  }
+  
+  .heroReser p {
+    font-size: 0.85rem;
+  }
+  
+  .reservation-section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .reservation-card {
+    padding: 1.5rem;
+  }
+  
+  .reservation-grid {
+    gap: 2rem;
+  }
+}

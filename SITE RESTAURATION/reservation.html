@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réservation - Brasserie Colomba</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style/style.css">
+<link rel="stylesheet" href="assets/style/reservation.css">
+</head>
+<body>
+
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"/>
+        </svg>
+        <h2>Restaurant Méditerranéen</h2>
+      </a>
+      
+      <nav>
+        <ul class="nav-links desktop-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menuCarte.html">Menu</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+  
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <ul class="nav-links" id="mobileNavLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menuCarte.html">Menu</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reservation.html" class="btn-reserve btn-reserveDose">Réserver une Table</a></li>
+        </ul>
+        
+        <div class="nav-overlay" id="navOverlay"></div>
+        
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger-inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <a href="#reservation" class="btn-reserve">Réserver</a>
+  
+      </nav>
+    </div>
+  </header>
+<section class="heroReser">
+  <div class="hero-content">
+    <h1>Réservez Votre Table</h1>
+    <p>Une expérience méditerranéenne inoubliable vous attend. Sélectionnez votre date, heure et nombre de convives ci-dessous pour réserver votre table.</p>
+  </div>
+</section>
+
+<section class="reservation-section">
+  <div class="reservation-card">
+    <form id="reservationForm">
+      <div class="reservation-grid">
+        
+        <!-- Colonne Gauche : Date et Heure -->
+        <div>
+          <h3 class="section-title">Choisissez une Date</h3>
+          <div class="calendar" id="calendar">
+            <div class="calendar-header">
+              <button type="button" id="prevMonth">‹</button>
+              <div class="calendar-month" id="currentMonth">Mai 2024</div>
+              <button type="button" id="nextMonth">›</button>
+            </div>
+            <div class="calendar-grid" id="calendarDays">
+              <!-- Généré dynamiquement par JS -->
+            </div>
+          </div>
+          
+          <h3 class="section-title" style="margin-top: 2rem;">Choisissez une Heure</h3>
+          <div class="time-slots" id="timeSlots">
+            <button type="button" class="time-slot" data-time="18:00">18h00</button>
+            <button type="button" class="time-slot" data-time="18:30">18h30</button>
+            <button type="button" class="time-slot selected" data-time="19:00">19h00</button>
+            <button type="button" class="time-slot" data-time="19:30">19h30</button>
+            <button type="button" class="time-slot" data-time="20:00">20h00</button>
+            <button type="button" class="time-slot" data-time="20:30">20h30</button>
+            <button type="button" class="time-slot" data-time="21:00">21h00</button>
+          </div>
+        </div>
+        
+        <!-- Colonne Droite : Détails -->
+        <div>
+          <h3 class="section-title">Vos Informations</h3>
+          
+          <div class="form-group">
+            <label for="guests">Nombre de Convives</label>
+            <select id="guests" class="form-control" required>
+              <option value="2">2 personnes</option>
+              <option value="1">1 personne</option>
+              <option value="3">3 personnes</option>
+              <option value="4">4 personnes</option>
+              <option value="5">5 personnes</option>
+              <option value="6">6 personnes</option>
+              <option value="7">7 personnes</option>
+              <option value="8+">8+ personnes</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="name">Nom Complet</label>
+            <input type="text" id="name" class="form-control" placeholder="Jean Dupont" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Adresse Email</label>
+            <input type="email" id="email" class="form-control" placeholder="jean.dupont@exemple.fr" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Numéro de Téléphone</label>
+            <input type="tel" id="phone" class="form-control" placeholder="+33 6 12 34 56 78" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="notes">Demandes Spéciales (Optionnel)</label>
+            <textarea id="notes" class="form-control" placeholder="Ex: restrictions alimentaires, occasion spéciale..."></textarea>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="submit-section">
+        <button type="submit" class="btn-submit">Confirmer la Réservation</button>
+        
+        <div class="contact-info">
+          <p>Pour les groupes de plus de 8 personnes, veuillez nous appeler directement.</p>
+          <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="assets/script/script.js"></script>
+</body>
+</html>

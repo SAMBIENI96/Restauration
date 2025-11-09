@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Méditerranéen</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <a href="#" class="logo">
+      <svg class="logo-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"/>
+      </svg>
+      <h2>Restaurant Méditerranéen</h2>
+    </a>
+    
+    <nav>
+      <ul class="nav-links desktop-nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menuCarte.html">Menu</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <ul class="nav-links" id="mobileNavLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menuCarte.html">Menu</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html" class="btn-reserve btn-reserveDose">Réserver une Table</a></li>
+      </ul>
+      
+      <div class="nav-overlay" id="navOverlay"></div>
+      
+      <div class="hamburger" id="hamburger">
+        <div class="hamburger-inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <a href="#reservation" class="btn-reserve">Réserver</a>
+
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="accueil">
+  <div class="hero-content">
+    <h1>Restaurant Méditerranéen</h1>
+    <h2>Découvrez le cœur de la Méditerranée</h2>
+    <a href="#reservation" class="btn-reserve btn-reserveOne">Réserver une Table</a>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container text-center">
+    <h2>Votre restaurant incontournable sur le vieux port de Bastia</h2>
+    <p class="intro-text">Découvrez une expérience culinaire unique où les saveurs méditerranéennes traditionnelles rencontrent la sophistication moderne. Notre brasserie offre une atmosphère chaleureuse et accueillante, parfaite pour toutes les occasions, des dîners intimes aux célébrations festives. Rejoignez-nous et savourez l'essence de Bastia.</p>
+  </div>
+</section>
+
+<section class="section-darker">
+  <div class="container">
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-bg" style="background-image: url(/assets/image/homr/ACCHERO.png)"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Le Restaurant</h3>
+          <p>Explorez notre espace de restauration élégant et l'ambiance chaleureuse qui définit notre expérience.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-bg" style="background-image: url(assets/image/homr/CARD1.png);"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Le Bar à Cocktails</h3>
+          <p>Découvrez notre sélection de boissons artisanales et l'atmosphère vibrante du bar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="split-section">
+    <div class="split-content">
+      <h2>Un menu gastronomique et varié</h2>
+      <p>Nos chefs préparent chaque plat avec passion, en utilisant uniquement les ingrédients locaux les plus frais pour vous offrir un goût authentique de la Méditerranée.</p>
+      <a href="#menu" class="btn-outline">Voir le Menu</a>
+    </div>
+    <div class="split-image" style="background-image: url(assets/image/homr/about.png);"></div>
+  </div>
+</section>
+
+<section class="section-light" style="padding: 6rem 2rem; overflow: hidden;">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 4rem;">
+      <h2 style="color: var(--couleur-primaire);">Pourquoi Choisir Notre Restaurant</h2>
+      <p class="intro-text">Une expérience authentique au cœur de Bastia</p>
+    </div>
+    
+    <div class="why-choose-grid">
+      <div class="why-card">
+        <div class="why-card-image-wrapper">
+          <img src="assets/image/homr/unnamed (4).png" alt="Extérieur Restaurant" class="why-card-image">
+        </div>
+        <div class="why-card-content">
+          <div class="why-card-number">01</div>
+          <h3 class="why-card-title">Emplacement Privilégié</h3>
+          <p class="why-card-text">Idéalement situé sur le vieux port de Bastia, notre établissement vous offre une vue imprenable et une ambiance maritime authentique. Profitez de notre terrasse en admirant le coucher de soleil sur la Méditerranée.</p>
+        </div>
+      </div>
+      
+      <div class="why-card why-card-reverse">
+        <div class="why-card-content">
+          <div class="why-card-number">02</div>
+          <h3 class="why-card-title">Ambiance Raffinée</h3>
+          <p class="why-card-text">Notre décor allie élégance contemporaine et charme traditionnel corse. Chaque détail a été pensé pour créer une atmosphère chaleureuse et sophistiquée, parfaite pour vos moments précieux.</p>
+        </div>
+        <div class="why-card-image-wrapper">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2dzKKWpDkZ8zQu5t52Dr2knz5H6G6RBMfN_H_0uOLWKcTALlWsq9bf-ZMUoUn4gFs-T1CgQKYHMmSdagYKCwPtwmzkv7Nezo1TaE8x2VckqPWqa5eyi2CbIZ7_t5GL6gNEzCFhO91PrcsH_RkVqaQLyknrn-4qSHWq69IhuL4bncrBQ14cyFxptVzm3h1q49iEcFryNG7FNctLmTRRJ8d1twR2462hmBr4dDj1W1VlYanY867BfBldedcLfg1HmEAToR74H-jL9Xz" alt="Intérieur élégant" class="why-card-image">
+        </div>
+      </div>
+      
+      <div class="why-card">
+        <div class="why-card-image-wrapper">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuClhELl49N0PqegNDYruxuXn3gNgUFAYcefR0qj2anctHXp_G4sFzWbrUta00_uoKiWz5evV_ngOYii2cJm_-xdijI3dCgCN39D-jRy2VG9OtpY2eR5rhBLfrVgIU42_7Xdghh9XEfjLyYtsce0WEFzguk5r6g193DC3pP9nAE4fKn2H6Rxc4Z07xJIFpxll7_35wKsMGB8APZ7ANM8hxC4KjzKXgpsuwy0Ki0WINAUNFkerdWqU9RNNJjDGkIarqJLY6Uq0M2Sg7Px" alt="Salle de restaurant" class="why-card-image">
+        </div>
+        <div class="why-card-content">
+          <div class="why-card-number">03</div>
+          <h3 class="why-card-title">Cuisine d'Excellence</h3>
+          <p class="why-card-text">Nos chefs passionnés revisitent les classiques méditerranéens avec créativité et savoir-faire. Produits frais, locaux et de saison sont au cœur de notre philosophie culinaire pour garantir des saveurs authentiques.</p>
+        </div>
+      </div>
+      
+      <div class="why-card why-card-reverse">
+        <div class="why-card-content">
+          <div class="why-card-number">04</div>
+          <h3 class="why-card-title">Service Attentionné</h3>
+          <p class="why-card-text">Notre équipe dévouée met un point d'honneur à vous offrir un service irréprochable. Chaleur humaine, professionnalisme et attention aux détails font de chaque visite un moment inoubliable.</p>
+        </div>
+        <div class="why-card-image-wrapper">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdRNubVt1qVfJKbxUoTWHrQEFETAVYPYVaO7_VSFJIPb60Yyo_SkBplXxomzb6y-9w_zUEwAaYlD2m3KKimuVgYadlsp8wh36wCGdrEhDJTxlCZ8x_c3KTUkYAEOtZV0F9FctyOvsuUBhW3zOEJpt4jD20bnNxAwNoGlH4f718pvIqOB9J-Kh6XbfkEU3gMwpFrFx-qLsqQWlrYyCMkzrP88ABOFbP9zozst0TW3K6RybXDHv2vSArM267r5mW7zD0EQky0uKD-kOR" alt="Bar à cocktails" class="why-card-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-darker">
+  <div class="container">
+    <div class="text-center">
+      <h2>Un Aperçu de Notre Restaurant</h2>
+      <p class="intro-text">Découvrez nos créations culinaires et l'ambiance unique de notre établissement.</p>
+    </div>
+    
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzAp_Lik5uRtNKA4B0OiroGN8T4J4SlViHD8DfmPPnfw24S-Cl6gAbSwlUt0LqapiUub5HkqUo94xHON0jcRWRD795cutgWOV-Pb9SSoE_4aebCSUX1zNcGIsvKezEBbj_wD4YHcvc6DLXMe_5-d7Gv4H0udP6CVL9fe_S4y0A9suF6RzifX9P8Y_rPGZlIo1_GpHHNdnRXjoFPu3Gjevx-VpbDCrn-Dv0JIxPO3hSejd2xr-jYclv05IzjSM60IlwheqB5YerQPrn" alt="Pizza délicieuse">
+      </div>
+      <div class="gallery-item">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKJQiabQ8Wju1V0DlPNGruRIfQLQLcEYdl5G2p86RA-aJBNHi9armP5QieKawf6W0bp0i0gAOau4YxjMfZsaz9TKCFtjLWd8tD5i77nT3t0G03bYQWjWP6EAMXnB7yhdf9NasgoJc1mTlEgZpy4SNaIzQ6or1tHQIW0oO89GxAOU7jaBmlP0AldFHPHXxCkwSpBER07I79i_LhQB-QGolLUjPlRwiadu7y4K0kBrcpFHPR6xKqVj89ef6Tk1cHtEUhuBABxJXDrtPk" alt="Cocktails colorés">
+      </div>
+      <div class="gallery-item">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuApiEDlu5nm8drp2ZlkKQqvMymnBXB5xeuy729lj1SroY1ltF7mX7cdsVfIb6SiL4NphL1UUP194YsHhYEMd5xA4BXyhX85XKDO2g96GOUovsRNPgkIHCqlBbqxrYds1kQXUhtydOQTUs_6VGJi90ZxNEVfyS97L-jhqTtfYuX_UsgcWT_5HK2GnW8PHyOou2WCcA4h2cmf4YVz4BkHtKBSGBtNEc9Ukf4qSDsiRD7yEVfWAVCkgQJ1d84HEFrEuYrw7kU5DB_C8W-4" alt="Pancakes moelleux">
+      </div>
+      <div class="gallery-item">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4DftklrMvVGMoJxsti2hA_gIQWckJW0mzSBbFVAIlzPAIwFAhx1lroZhisio95DLInIMAaspIh921VEnzrYMXeirXbkzB54OW5Cdn6ib6J9--2WIF5sBjPB-WGUBT8B6DZ66A356OBDxAiU1C8EpBCfjGWdxQD-y_UY_ykL3mhBfkWwk2jR8b-QgJSDWDbXRhO3UQ6XcE2YrBtOxoo05LqX9WecdjB7Rr8pS7NyTh1PnVqxiqsNQa6SJnudljMo5lNWK5qw1jYUao" alt="Burger gourmet">
+      </div>
+      <div class="gallery-item">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2IVCcGD-w7vV1qzLDnZK8bqw3F3GR_KziF8PH-JhvqxXczNUiVBoaJ54AjBt1mYKJoRXk4sEYjRum9UCuQJTyWo3MbZ46J9w5JjrNe8D2zk9pSZe32WuQUXV3iEv-KHbbMee0bCBqjwdIukcrM2ZOvR3SmVCqTK8gT_l4aEIBDZLPTGaZotJgeHHSl2eW5OIUgeVA0Tw-T4qq5BvJbHC4ktnnWd5P0IcMgdXEu4mukC6TuVcv3vxz1yHl1XZ4MOukMjF6-KN02-BG" alt="Bowl petit-déjeuner">
+      </div>
+      <div class="gallery-item">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiuq4M0UYZ6f5JhrT19zu_k4Rq3OCA654NWkr9Cbk44VoTOw39T8wttGEhZxOf2Ae1Vz2miCRp3X_9TOFuOSa-K3IIlbOTLvcBZ7VQ2Ysw6JYBjeqLxnwP8M7cCRLbp63MXcbvA9tX2S5ijMNzf6qamc3nTLSZbPv7yAi-BGRipaqFT1-K9lHFDotTaO0aE2pQS9v5jNrFHlI_mZ9xnGO2sYHFbndj_8xX3CKPKj8QxWrlCEeZs01P-ug4E4fPNLPqu9wEer6CTFR0" alt="Assortiment cocktails">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <div class="newsletter-grid">
+      <div>
+        <h2>Restez Connectés</h2>
+        <p>Soyez les premiers informés de nos nouveaux plats, événements spéciaux et offres exclusives. Abonnez-vous à notre newsletter.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Votre adresse e-mail" required>
+          <button type="submit" class="btn-reserve">S'abonner</button>
+        </form>
+      </div>
+      
+      <div class="newsletter-images">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBblEzJzhz9wP1XVVMA88eu3WKepetEa-E23RDoqRvdkR_KNhFjATjglGS83s_4rRHPr0HlphtvYuPyyhs4uYiUr49M2XBcbrZIN34RJoqat0qblsKMt8PWJE2e10Ajg_t5b8DWwd728_IR7Na0GPlHyTffNO2_khu22UubdK19Y0uMvgXVj6vs2_5hGSDZiigm1X37fjscht-Cr-nMQK65aOgnRAj1jAZEoeBVGUhyuoIVavvfa3JtwiUjTCko08JWkq4YObQYXadN" alt="Pâtes aux fruits de mer">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUbMn6JVVWuVDp--1h73sj2lek5CqiGc4i1xPZZMOkK_0eoql7lHvQVp0BymQNDuL1QeFWuIQa7fMGZVuLtvb4f8ebaioW_3Hdp61f7QZJSsYhOknOg2Se5ef9u75hxi1ZXxyLg_UMzeqV3kqGaO2yN81-SoWDrNLXFxLpjAeKEg8Eds8XhxL5uewBlUPSY9ZS96gvToNvWP1pYoP9uZN8OgB8DUTZX6on3VZ4Q-fOI5R2kCBtRo-Yz9UUqFd7fzwygctCgSiJn9WX" alt="Vin rouge">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4Tkz3DO2Y7kmBQVNPC-GWD4Su1Xw79cYfFYKV_j0CBV4MXd5FDABX_ZDrLIa6L3nO-Ahp4b1sy9NU2AWxOSC0QnMewHfx5Mkf3RYpwd19r4Zsl39EUi2Tea9Xq5Gtc5gr7_bzMB6XQtOajdu_mZCqi7nJmcFHN9Gc7qbGAoisbF0On7a4w6g-aFYiH0Hvq3FGclh-VsuQhANRTXUCpPa07U1wR2T-FHjRYOl-mGnfDVSD_gNY9oN8bXgHu4L808p2neLiPLOicClA" alt="Brunch">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-section">
+      <div class="logo" style="margin-bottom: 1rem;">
+        <svg class="logo-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"/>
+        </svg>
+        <h2>Restaurant Méditerranéen</h2>
+      </div>
+      <p style="color: #d6d3d1; max-width: 400px;">Un restaurant méditerranéen moderne situé sur le vieux port de Bastia, offrant une atmosphère chaleureuse et une cuisine exquise.</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Nous Contacter</h3>
+      <ul>
+        <li><a href="#">123 Rue du Vieux Port, Bastia</a></li>
+        <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+        <li><a href="mailto:contact@restaurant.com">contact@restaurant.com</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Horaires d'Ouverture</h3>
+      <ul>
+        <li>Lun - Ven: 12h - 23h</li>
+        <li>Samedi: 12h - 00h</li>
+        <li>Dimanche: 11h - 22h</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2024 Restaurant Méditerranéen. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="assets/script/script.js"></script>
+
+</body>
+</html>
