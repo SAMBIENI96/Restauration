@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notre Menu - Brasserie Colomba</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style/style.css">
+<link rel="stylesheet" href="/assets/style/menuCarte.css">
+
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"/>
+        </svg>
+        <h2>Restaurant Méditerranéen</h2>
+      </a>
+      
+      <nav>
+        <ul class="nav-links desktop-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menuCarte.html">Menu</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+  
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <ul class="nav-links" id="mobileNavLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menuCarte.html">Menu</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reservation.html" class="btn-reserve btn-reserveDose">Réserver une Table</a></li>
+        </ul>
+        
+        <div class="nav-overlay" id="navOverlay"></div>
+        
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger-inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <a href="#reservation" class="btn-reserve">Réserver</a>
+  
+      </nav>
+    </div>
+  </header>
+  
+
+<section class="heroCart">
+  <div class="hero-content">
+    <h1>Découvrez Notre Sélection</h1>
+    <p>De la cave à la table – goût, élégance et authenticité.</p>
+  </div>
+</section>
+
+<div class="onglets-conteneur">
+  <div class="onglets">
+    <button class="bouton-onglet active" data-tab="restaurant">Menu Restaurant</button>
+
+    <button class="bouton-onglet" data-tab="wines">Bar à Vins</button>
+    <button class="bouton-onglet" data-tab="desserts">Desserts & Café</button>
+  </div>
+</div>
+
+<div class="conteneur-contenu">
+  
+<!-- Restaurant Menu Tab -->
+<div id="restaurant" class="contenu-onglet active">
+  <div class="accordeon">
+    
+    <!-- Entrées -->
+    <div class="bloc-accordeon active">
+      <div class="entete-accordeon">
+        <h2>Entrées à Partager</h2>
+        <div class="icone-accordeon">▼</div>
+      </div>
+      <div class="contenu-accordeon">
+        <div class="corps-accordeon">
+          
+          <div class="item-menu">
+            <img src="assets/image/MENUdESSERT/d1.png" alt="Linguine aux araignées de mer" class="img-item-menu">
+            <div class="contenu-item-menu">
+              <h3>Linguine aux Araignées de Mer</h3>
+              <p class="description-item-menu">Linguine fraîches accompagnées de délicate chair d'araignée de mer, tomates cerises, ail et une pointe de piment.</p>
+            </div>
+            <span class="prix-item-menu">€26.00</span>
+            <div class="dessert-icons">
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L15 8L21 9L16.5 14L18 21L12 17.5L6 21L7.5 14L3 9L9 8L12 2Z"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="item-menu">
+            <img src="assets/image/MENUdESSERT/D4.png" alt="Linguine aux araignées de mer" class="img-item-menu">
+            <div class="contenu-item-menu">
+              <h3>Poulpe Grillé</h3>
+              <p class="description-item-menu">Tentacule de poulpe tendre, grillée à la perfection, servie avec une vinaigrette aux herbes et citron sur confit de pommes de terre.</p>
+            </div>
+            <span class="prix-item-menu">€18.50</span>
+            <div class="dessert-icons">
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L15 8L21 9L16.5 14L18 21L12 17.5L6 21L7.5 14L3 9L9 8L12 2Z"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Salades -->
+    <div class="bloc-accordeon">
+      <div class="entete-accordeon">
+        <h2>Salades & Plats Frais</h2>
+        <div class="icone-accordeon">▼</div>
+      </div>
+      <div class="contenu-accordeon">
+        <div class="corps-accordeon">
+          
+          <div class="item-menu">
+            <img src="assets/image/MENUdESSERT/D5.png" alt="Linguine aux araignées de mer" class="img-item-menu">
+            <div class="contenu-item-menu">
+              <h3>Burrata & Tomates Anciennes</h3>
+              <p class="description-item-menu">Fromage burrata crémeux sur un lit de tomates anciennes colorées, arrosé d'huile d'olive infusée au basilic.</p>
+            </div>
+            <span class="prix-item-menu">€16.00</span>
+            <div class="dessert-icons">
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L15 8L21 9L16.5 14L18 21L12 17.5L6 21L7.5 14L3 9L9 8L12 2Z"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Viandes -->
+    <div class="bloc-accordeon">
+      <div class="entete-accordeon">
+        <h2>Terroir & Viandes</h2>
+        <div class="icone-accordeon">▼</div>
+      </div>
+      <div class="contenu-accordeon">
+        <div class="corps-accordeon">
+          
+          <div class="item-menu">
+            <img src="assets/image/MENUdESSERT/D6.png" alt="Linguine aux araignées de mer" class="img-item-menu">
+            <div class="contenu-item-menu">
+              <h3>Souris d'Agneau Confite</h3>
+              <p class="description-item-menu">Souris d'agneau fondante braisée au vin rouge et aux herbes, servie avec une polenta crémeuse.</p>
+            </div>
+            <span class="prix-item-menu">€34.00</span>
+            <div class="dessert-icons">
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L15 8L21 9L16.5 14L18 21L12 17.5L6 21L7.5 14L3 9L9 8L12 2Z"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Poissons -->
+    <div class="bloc-accordeon">
+      <div class="entete-accordeon">
+        <h2>Spécialités de la Mer</h2>
+        <div class="icone-accordeon">▼</div>
+      </div>
+      <div class="contenu-accordeon">
+        <div class="corps-accordeon">
+          
+          <div class="item-menu">
+            <img src="assets/image/MENUdESSERT/d1.png" alt="Linguine aux araignées de mer" class="img-item-menu">
+            <div class="contenu-item-menu">
+              <h3>Bar Poêlé</h3>
+              <p class="description-item-menu">Filet de bar à la peau croustillante servi sur un lit de légumes rôtis avec une sauce au citron et beurre.</p>
+            </div>
+            <span class="prix-item-menu">€31.00</span>
+            <div class="dessert-icons">
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L15 8L21 9L16.5 14L18 21L12 17.5L6 21L7.5 14L3 9L9 8L12 2Z"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <svg class="dessert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  <!-- Wine Bar Tab -->
+  <div id="wines" class="contenu-onglet">
+    <h2 class="titre-section">Sélection de Vins</h2>
+    
+    <div class="categorie-vin">
+      <h3>Vins Blancs</h3>
+      <div class="grille-vin">
+        <div class="item-vin">
+          <div class="info-vin">
+            <h4>Sauvignon Blanc</h4>
+            <p>Loire Valley, FR | Sauvignon Blanc</p>
+          </div>
+          <div class="prix-vin">
+            <div class="price">€9 / €42</div>
+            <div class="label">Verre / Bouteille</div>
+          </div>
+        </div>
+        <div class="item-vin">
+          <div class="info-vin">
+            <h4>Chardonnay</h4>
+            <p>Bourgogne, FR | Chardonnay</p>
+          </div>
+          <div class="prix-vin">
+            <div class="price">€11 / €50</div>
+            <div class="label">Verre / Bouteille</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="categorie-vin">
+      <h3>Vins Rouges</h3>
+      <div class="grille-vin">
+        <div class="item-vin">
+          <div class="info-vin">
+            <h4>Pinot Noir</h4>
+            <p>Alsace, FR | Pinot Noir</p>
+          </div>
+          <div class="prix-vin">
+            <div class="price">€12 / €55</div>
+            <div class="label">Verre / Bouteille</div>
+          </div>
+        </div>
+        <div class="item-vin">
+          <div class="info-vin">
+            <h4>Merlot</h4>
+            <p>Bordeaux, FR | Merlot</p>
+          </div>
+          <div class="prix-vin">
+            <div class="price">€10 / €48</div>
+            <div class="label">Verre / Bouteille</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="categorie-vin">
+      <h3>Vins Rosés</h3>
+      <div class="grille-vin">
+        <div class="item-vin">
+          <div class="info-vin">
+            <h4>Côtes de Provence</h4>
+            <p>Provence, FR | Grenache, Cinsault</p>
+          </div>
+          <div class="prix-vin">
+            <div class="price">€10 / €45</div>
+            <div class="label">Verre / Bouteille</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="categorie-vin">
+      <h3>Champagne & Pétillants</h3>
+      <div class="grille-vin">
+        <div class="item-vin">
+          <div class="info-vin">
+            <h4>Prosecco Superiore</h4>
+            <p>Veneto, IT | Glera</p>
+          </div>
+          <div class="prix-vin">
+            <div class="price">€10 / €50</div>
+            <div class="label">Verre / Bouteille</div>
+          </div>
+        </div>
+        <div class="item-vin">
+          <div class="info-vin">
+            <h4>Champagne Brut</h4>
+            <p>Champagne, FR | Pinot Noir</p>
+          </div>
+          <div class="prix-vin">
+            <div class="price">— / €95</div>
+            <div class="label">Verre / Bouteille</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desserts Tab -->
+  <div id="desserts" class="contenu-onglet">
+    <h2 class="titre-section">Desserts & Café</h2>
+    
+    <div class="grille-desserts">
+      <div class="carte-dessert">
+        <img src="assets/image/MENUdESSERT/d1.png" alt="Tiramisu" class="dessert-image">
+        <div class="contenu-dessert">
+          <div class="entete-dessert">
+            <h3 class="titre-dessert">Tiramisu Classico</h3>
+            <span class="prix-dessert">€9.50</span>
+          </div>
+          <p class="description-dessert">Biscuits à la cuillère, espresso, crème au mascarpone, poudre de cacao.</p>
+        </div>
+      </div>
+
+      <div class="carte-dessert">
+        <img src="assets/image/MENUdESSERT/d2.png" alt="Tiramisu" class="dessert-image">
+        <div class="contenu-dessert">
+          <div class="entete-dessert">
+            <h3 class="titre-dessert">Crème Brûlée</h3>
+            <span class="prix-dessert">€9.00</span>
+          </div>
+          <p class="description-dessert">Crème onctueuse surmontée d'une couche de sucre caramélisé craquant.</p>
+        </div>
+      </div>
+
+      <div class="carte-dessert">
+        <img src="assets/image/MENUdESSERT/D4.png" alt="Tiramisu" class="dessert-image">
+
+        <div class="contenu-dessert">
+          <div class="entete-dessert">
+            <h3 class="titre-dessert">Tarte au Citron</h3>
+            <span class="prix-dessert">€8.50</span>
+          </div>
+          <p class="description-dessert">Pâte sucrée avec une garniture crémeuse et acidulée au citron.</p>
+        </div>
+      </div>
+
+      <div class="carte-dessert">
+        <img src="assets/image/MENUdESSERT/D5.png" alt="Tiramisu" class="dessert-image">
+        <div class="contenu-dessert">
+          <div class="entete-dessert">
+            <h3 class="titre-dessert">Espresso</h3>
+            <span class="prix-dessert">€3.00</span>
+          </div>
+          <p class="description-dessert">Un shot de notre meilleur mélange de café Arabica.</p>
+        </div>
+      </div>
+
+      <div class="carte-dessert">
+        <img src="assets/image/MENUdESSERT/D6.png" alt="Tiramisu" class="dessert-image">
+        <div class="contenu-dessert">
+          <div class="entete-dessert">
+            <h3 class="titre-dessert">Cappuccino</h3>
+            <span class="prix-dessert">€4.50</span>
+          </div>
+          <p class="description-dessert">Espresso avec mousse de lait vapeur, garni de cacao.</p>
+        </div>
+      </div>
+
+      <div class="carte-dessert">
+        <img src="assets/image/MENUdESSERT/D7.png" alt="Tiramisu" class="dessert-image">
+        <div class="contenu-dessert">
+          <div class="entete-dessert">
+            <h3 class="titre-dessert">Thé Mariage Frères</h3>
+            <span class="prix-dessert">€6.00</span>
+          </div>
+          <p class="description-dessert">Une sélection de thés français premium. Demandez notre liste du jour.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+    <div class="footer-grid">
+      <div class="footer-section">
+        <div class="logo" style="margin-bottom: 1rem;">
+          <svg class="logo-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"/>
+          </svg>
+          <h2>Restaurant Méditerranéen</h2>
+        </div>
+        <p style="color: #d6d3d1; max-width: 400px;">Un restaurant méditerranéen moderne situé sur le vieux port de Bastia, offrant une atmosphère chaleureuse et une cuisine exquise.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Nous Contacter</h3>
+        <ul>
+          <li><a href="#">123 Rue du Vieux Port, Bastia</a></li>
+          <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+          <li><a href="mailto:contact@restaurant.com">contact@restaurant.com</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Horaires d'Ouverture</h3>
+        <ul>
+          <li>Lun - Ven: 12h - 23h</li>
+          <li>Samedi: 12h - 00h</li>
+          <li>Dimanche: 11h - 22h</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 Restaurant Méditerranéen. Tous droits réservés.</p>
+    </div>
+  </footer>
+<script src="assets/script/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Visite - Brasserie Colomba</title>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQZJvF1WV7RyYpJd+UjOvwVx2u+I+6Vqk0P7fXoD4ZC1zT9R7pCjk8b+XjzK2D2w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style/contact.css">
+<link rel="stylesheet" href="/assets/style/style.css">
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"/>
+        </svg>
+        <h2>Restaurant Méditerranéen</h2>
+      </a>
+      
+      <nav>
+        <ul class="nav-links desktop-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menuCarte.html">Menu</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+  
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <ul class="nav-links" id="mobileNavLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menuCarte.html">Menu</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reservation.html" class="btn-reserve btn-reserveDose">Réserver une Table</a></li>
+        </ul>
+        
+        <div class="nav-overlay" id="navOverlay"></div>
+        
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger-inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <a href="#reservation" class="btn-reserve">Réserver</a>
+  
+      </nav>
+    </div>
+  </header>
+<main>
+  <div class="page-header">
+    <h1>Contactez-Nous & Trouvez Notre Brasserie</h1>
+    <p>Nous avons hâte de vous accueillir. Trouvez toutes les informations dont vous avez besoin pour nous contacter ou nous rendre visite ci-dessous.</p>
+  </div>
+  
+  <div class="content-grid">
+    <!-- Colonne Gauche : Informations -->
+    <div class="contact-info">
+      
+      <!-- Adresse -->
+      <div class="contact-card">
+        <div class="contact-icon"><img src="assets/image/icone/location.png" alt=""></div>
+        <div class="contact-details">
+          <h3>Adresse</h3>
+          <p>123 Rue de la Gastronomie<br>Bordeaux, 33000, France</p>
+        </div>
+      </div>
+      
+      <!-- Téléphone -->
+      <div class="contact-card">
+        <div class="contact-icon"><img src="assets/image/icone/phone-call.png" alt=""></div>
+        <div class="contact-details">
+          <h3>Téléphone</h3>
+          <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+        </div>
+      </div>
+      
+      <!-- Email -->
+      <div class="contact-card">
+        <div class="contact-icon"><img src="assets/image/icone/communication.png" alt=""></div>
+        <div class="contact-details">
+          <h3>Email</h3>
+          <a href="mailto:reservations@brasseriecolomba.com">reservations@brasseriecolomba.com</a>
+        </div>
+      </div>
+      
+      <!-- Horaires d'Ouverture -->
+      <div class="opening-hours">
+        <h3>Horaires d'Ouverture</h3>
+        <div class="hours-list">
+          <div class="hours-item">
+            <span class="day">Lundi - Vendredi</span>
+            <span class="time">12h00 - 22h00</span>
+          </div>
+          <div class="hours-item">
+            <span class="day">Samedi</span>
+            <span class="time">11h00 - 23h00</span>
+          </div>
+          <div class="hours-item">
+            <span class="day">Dimanche</span>
+            <span class="time">11h00 - 21h00</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Réseaux Sociaux -->
+      <div class="social-section">
+        <h3>Suivez-Nous</h3>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" title="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" title="TripAdvisor">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-3.5 16.5c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5zm7 0c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Bouton CTA -->
+      <div class="cta-button">
+        <a href="#" class="btn-large">Faire une Réservation</a>
+      </div>
+      
+    </div>
+    
+    <!-- Colonne Droite : Carte -->
+    <div class="map-section">
+      <div class="map-container">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB25Tk6FyAs0uVfg53oHysiIgMu1UL8sLpsU8A4VP0ED802hBwSGkRH9mNXvXUe1OVxRbv-4E4aZFIAFQpFyWTh3z-TKdbiHbMrCqy3mZRI2aoJnbtSh7lKHDENmi-BMimCmc9oZXIIy8DFmvlm70kASXHEi3tAFySFGqyeISZy5NwzN2nWgZAwdfNfP_fvAVB0rB-KxFrvXHC81ONkzX8JY7S24LwdJwm3TiXQcOawQLyc5DwMbcp424JhZ18OaD7pTeF42PnK8tOa" alt="Carte de localisation Brasserie Colomba à Bordeaux">
+        <div class="map-overlay">
+          <h4>📍 Trouvez-nous à Bordeaux</h4>
+          <p>En plein cœur du quartier gastronomique</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</main>
+
+
+    <footer>
+        <div class="footer-grid">
+          <div class="footer-section">
+            <div class="logo" style="margin-bottom: 1rem;">
+              <svg class="logo-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"/>
+              </svg>
+              <h2>Restaurant Méditerranéen</h2>
+            </div>
+            <p style="color: #d6d3d1; max-width: 400px;">Un restaurant méditerranéen moderne situé sur le vieux port de Bastia, offrant une atmosphère chaleureuse et une cuisine exquise.</p>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Nous Contacter</h3>
+            <ul>
+              <li><a href="#">123 Rue du Vieux Port, Bastia</a></li>
+              <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+              <li><a href="mailto:contact@restaurant.com">contact@restaurant.com</a></li>
+            </ul>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Horaires d'Ouverture</h3>
+            <ul>
+              <li>Lun - Ven: 12h - 23h</li>
+              <li>Samedi: 12h - 00h</li>
+              <li>Dimanche: 11h - 22h</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2024 Restaurant Méditerranéen. Tous droits réservés.</p>
+        </div>
+      </footer>
+
+    <script src="/assets/script/script.js"></script>
+       
+</body>
+</html>
